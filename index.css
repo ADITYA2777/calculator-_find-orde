@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.bar{
+    background-color: #e45f36;
+    padding: 14px 0px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.navbar{
+    width: 100%;
+    height: 120px;
+    background-color: #e1e1e1;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+img{
+      margin-left: 20px;
+}
+input{
+    width: 800%;
+    padding: 15px 10px;
+    font-size: 20px;
+    height: 45px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 80px;
+}
+.bi-search-heart{
+    color: #0957a0;
+    background-color: #ffab41;
+    width: 54%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px ;
+    margin-right:20px;
+    margin-left: -10px;
+    border: none;
+    border-radius: 3px;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* margin-right: 25px; */
+}
+i{
+    font-size: 25px;
+    padding: 10px 12px;
+    margin: 0px 12px;
+}
+
+section, .container {
+   display: flex ;
+   justify-content: center;
+   align-items: center; 
+}
+.container{
+  width: 100vw;
+  padding : 10px 25px;
+border: 2px solid black;
+border: none;
+/* font-size: 27px; */
+}
+.toy1,.toy2,.toy3{
+    box-shadow: 2px 3px 12px black;
+}
+
+
+
+
+.first-5-toy{
+    /* height: 100%; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    border: none;
+    margin-top: 3%;
+    /* padding: 10px 0px; */
+}
+.toy{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 16px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px peru;
+}
+.second-5-toy{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+/* border: 2px solid black; */
+border: none;
+margin-top: 3%
+}
+
+button{
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: none;
+    background-color: #18e39f;
+    color: white
+    
+}
+
+button:hover{
+    background-color: #ffab41;
+    color: black;
+    cursor: pointer;
+}
+
+
+.bill-book{
+    display: none;
+} 
+
+
+.cerating-table{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2px;
+    background-color: #071952;
+    color:#fff;
+}
+.cerating-table >h3:nth-child(5){
+    margin-right: 30px;
+}
+
+.creating-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color:white;
+    background-color: #0B666A;
+
+}
+.creating-content img{
+    height: 40px;
+    width: 80px;
+}
+.price-table{
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    border: 4px solid #293462;
+
+}
+.creating-content >h3:not(:nth-child(2)):nth-child(n+1):nth-child(-n+5){
+    padding: 10px 0px;
+}
+hr{
+    width: 78.5vw;
+   align-self: center;
+}
+.Total-price-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#071952;
+    color: #ffffff;
+    padding: 8px 15px;
+    /* margin-top: 23px; */
+}
+
+@media only  screen  and (max-width:768px) {
+    .navbar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+    input{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .bi-search-heart{
+        display: none;
+    }
+    .left {
+        margin-right: 10px;
+    }
+
+    .first-5-toy,
+    .second-5-toy {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .toy {
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    section, .container {
+        flex-wrap: wrap;
+        flex-direction: row;
+     }
+     .toy1,.toy2,.toy3{
+         width: 150px;
+         
+     }
+     .bill-book{
+        height: auto;
+    } 
+    
+    .cerating-table{
+        padding: 10px 5px;
+        background-color: #a72e10;
+        color:#fff;
+    }
+    .cerating-table >h3:nth-child(5){
+        margin-right: 10px;
+    }
+    
+    .creating-content{
+        padding: 10px 0px;
+        color:white;
+        font-size: 1.0rem;
+        width: auto;
+    }
+    .creating-content img{
+        height: 40px;
+        width: 80px;
+    }
+    .price-table{
+        align-items:center;
+        justify-content: center;
+        border: none;
+        box-shadow: 2px 3px 18px rgb(0, 128, 128);
+        border-radius: 3%;
+    
+    }
+    .creating-content >h3:not(:nth-child(2)):nth-child(n+1):nth-child(-n+5){
+        padding: 10px 0px;
+    }
+    
+    .Total-price-bottom{
+        background-color: #071952;
+    }
+    
+     
+}
+
+
+   @media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bi-search-heart{
+        display: none;
+    }
+
+    img {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar > * {
+        margin-bottom: 10px;
+    }
+    .toy1,.toy2,.toy3{
+        width: auto;
+        
+    }
+
+    section, .container {
+        display: flex ;
+        justify-content: center;
+        align-items: center; 
+     }
+     .container{
+       width: 100vw;
+       padding : 10px 25px;
+     border: 2px solid black;
+     border: none;
+     }
+     .toy1,.toy2,.toy3{
+         box-shadow: 2px 3px 12px black;
+     }
+     .bill-book{
+        height: auto;
+    } 
+    .creating-content{
+        font-size: 12px;
+        font-weight: 700;
+        width: auto;
+    }
+
+   
+    
+}
+
+
+/* Media Queries */
+
+
+  
+  /* Medium devices (landscape tablets)
+   @media only screen and (min-width: 577px) and (max-width: 992px) {
+    .navbar {
+      height: auto;
+      padding: 10px;
+    }
+  
+    input {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .left {
+      margin-right: 0;
+    }
+  } */
+  
+  /* Large devices (laptops/desktops) */
+  /* @media only screen and (min-width: 993px) {
+    .navbar {
+      height: 120px;
+    }
+  }  */
